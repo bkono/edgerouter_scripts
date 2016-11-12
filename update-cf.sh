@@ -17,10 +17,10 @@ update_record_with_ip() {
     -d 'a=rec_edit' \
     -d "tkn=$token" \
     -d "email=$email" \
-    -d "z=$(array[0])" \
-    -d "id=$(array[2])" \
+    -d "z=${array[0]}" \
+    -d "id=${array[2]}" \
     -d 'type=A' \
-    -d "name=$(array[1])" \
+    -d "name=${array[1]}" \
     -d 'ttl=1' \
     -d "content=$ip" \
     > /dev/null

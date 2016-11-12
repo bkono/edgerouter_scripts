@@ -36,5 +36,5 @@ sudo ipset swap $tmpgroup $group
 echo "... destroying tmp"
 sudo ipset destroy $tmpgroup
 
-echo "... update of firehol blocklists complete. New count=[ $(ipset -L $group | wc -l) ]"
+echo "... done"
 logger "... update of firehol blocklists complete. New count=[ $(ipset -L $group | wc -l) ]"
